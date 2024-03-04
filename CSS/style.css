@@ -32,3 +32,12 @@ img {
     display: block;
     max-width: 100%;
 }
+
+body {
+    font-family: var(--ff-regular);
+}
+
+.primary-header {
+    min-height: 10rem;
+    background-color: black;
+}
