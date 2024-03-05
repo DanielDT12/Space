@@ -14,6 +14,20 @@
     /* SPESIAL FONT OVERSKRIFT */
     --ff-special: "Anta", sans-serif;
     --fw-special: 400;
+
+    /* PRIMÆR FARGER */
+    --clr-heading: hsl(215, 58%, 13%);
+
+    /* NØYTRAL FARGER */
+    --clr-bg-light: hsl(261, 100%, 97%);
+    --clr-txt: hsl(252, 45%, 2%);
+    --clr-txt-light: var(--clr-bg-light);
+
+    /* BORDER RADIUS */
+    --brdr-rad-light: .5rem;
+    --brdr-rad-normal: 1rem;
+    --brdr-rad-heavy: 2rem;
+
 }
 
 /* CSS RESET */
@@ -33,11 +47,94 @@ img {
     max-width: 100%;
 }
 
+html {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.1;
+}
+
 body {
     font-family: var(--ff-regular);
 }
 
+main {
+    min-height: 100vh;
+}
+
+
+/* HEADER SEKSJON */
 .primary-header {
+    background-color: var(--clr-heading)
+}
+
+.header-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+    border-bottom: 1px solid hsla(260, 100%, 97%, 0.415);
+}
+
+.hdr-nav-ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.hdr-nav-ul a {
+    color: var(--clr-txt-light);
+    font-size: var(--fs-500);
+    text-decoration: none;
+    letter-spacing: .2rem;
+}
+
+.hdr-nav-ul a:hover {
+    text-decoration: underline;
+}
+
+.logo-link {
+    color: var(--clr-txt-light);
+    font-size: var(--fs-700);
+    font-family: var(--ff-special);
+    text-decoration: none;
+}
+
+.intro-vector-bg {
+    display: flex;
+    align-items: center;
+    min-height: 30rem;
+    background-position: top right;
+    background-size: cover;
+    background-image: url(/images/background/space-vector-bg.svg);
+}
+
+.title-txt {
+    font-size: var(--fs-800);
+    font-family: var(--ff-special);
+    letter-spacing: .4rem;
+    margin-bottom: .5rem;
+}
+
+.info-txt {
+    max-width: 30rem;
+    margin-left: 6rem;
+    border-radius: var(--brdr-rad-normal);
+    padding: 2rem;
+    background-color: hsla(255, 40%, 2%, 0.6);
+    color: var(--clr-txt-light);
+}
+
+/* FOOTER */
+.primary-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 10rem;
-    background-color: black;
+    background-color: var(--clr-heading);
+}
+
+.ftr-container {
+    color: var(--clr-txt-light);
 }
