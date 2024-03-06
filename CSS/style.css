@@ -107,7 +107,7 @@ main {
     min-height: 30rem;
     background-position: top right;
     background-size: cover;
-    background-image: url(/images/background/space-vector-bg.svg);
+    background-image: url(../images/background/space-vector-bg.svg);
 }
 
 .title-txt {
