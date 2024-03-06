@@ -1,8 +1,6 @@
 ### Read me
 
-4/3/2024
-
-## Daniel
+## Daniel 4/3/2024
 
 -Startet med en diskusjon av hoved elementer
 
@@ -10,10 +8,7 @@
 
 -Sett rundt på noen bilder jeg kan bruke i oppgaven
 
-
-5/3/2024
-
-## Daniel
+## Daniel 5/3/2024
 
 -Startet med index html filen og lagt til elementer som
 er gjentagende på flere sider
@@ -22,9 +17,7 @@ er gjentagende på flere sider
 
 -Funnet bilder til netsiden
 
-6/3/2024
-
-## Daniel
+## Daniel 6/3/2024
 
 -Startet på main seksjon i index html
 
