@@ -77,6 +77,13 @@ main {
     border-bottom: 1px solid hsla(260, 100%, 97%, 0.415);
 }
 
+.logo-link {
+    color: var(--clr-txt-light);
+    font-size: var(--fs-700);
+    font-family: var(--ff-special);
+    text-decoration: none;
+}
+
 .hdr-nav-ul {
     display: flex;
     gap: 1rem;
@@ -92,13 +99,6 @@ main {
 
 .hdr-nav-ul a:hover {
     text-decoration: underline;
-}
-
-.logo-link {
-    color: var(--clr-txt-light);
-    font-size: var(--fs-700);
-    font-family: var(--ff-special);
-    text-decoration: none;
 }
 
 .intro-vector-bg {
