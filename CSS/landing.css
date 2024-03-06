@@ -41,6 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-inline: 2rem;
     color: var(--clr-txt-light);
     background-image: url(/images/background/space-black-pixel-bg.png);
 }
