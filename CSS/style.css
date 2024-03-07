@@ -57,6 +57,7 @@ h1, h2, h3, h4 {
 
 body {
     font-family: var(--ff-regular);
+    background-color: var(--clr-bg-light);
 }
 
 main {
@@ -105,24 +106,26 @@ main {
     display: flex;
     align-items: center;
     min-height: 30rem;
+    border-bottom: 2px solid hsl(176, 82%, 37%);
     background-position: top right;
     background-size: cover;
     background-image: url(../images/background/space-vector-bg.svg);
 }
 
 .title-txt {
+    margin-bottom: .5rem;
     font-size: var(--fs-800);
     font-family: var(--ff-special);
     letter-spacing: .4rem;
-    margin-bottom: .5rem;
+    text-transform: uppercase;
 }
 
 .info-txt {
     max-width: 30rem;
-    margin-left: 6rem;
+    margin-inline: 6rem;
     border-radius: var(--brdr-rad-normal);
     padding: 2rem;
-    background-color: hsla(255, 40%, 2%, 0.6);
+    background-color: hsla(255, 40%, 2%, 0.8);
     color: var(--clr-txt-light);
 }
 
