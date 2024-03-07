@@ -1,0 +1,146 @@
+:root {
+    /* FONT SIZE */
+    --fs-800: 3.5rem;
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+
+    /* VANLIG FONT ALLE ELEMENTER */
+    --ff-regular:"Nunito", sans-serif;
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    /* SPESIAL FONT OVERSKRIFT */
+    --ff-special: "Anta", sans-serif;
+    --fw-special: 400;
+
+    /* PRIMÆR FARGER */
+    --clr-heading: hsl(215, 58%, 13%);
+
+    /* NØYTRAL FARGER */
+    --clr-bg-light: hsl(261, 100%, 97%);
+    --clr-txt: hsl(252, 45%, 2%);
+    --clr-txt-light: var(--clr-bg-light);
+
+    /* BORDER RADIUS */
+    --brdr-rad-light: .5rem;
+    --brdr-rad-normal: 1rem;
+    --brdr-rad-heavy: 2rem;
+
+}
+
+/* SOLAR SYSTEM SEKSJON MED SVG GRAFIKK */
+.divider-top {
+    min-height: 10rem;
+    background-image: linear-gradient(to bottom, transparent, white, black);
+}
+
+.solar-system {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2rem;
+    color: var(--clr-txt-light);
+    background-image: url(/images/background/space-black-pixel-bg.png);
+}
+
+.solar-system__information {
+    display: grid;
+    gap: 2rem;
+    max-width: 41rem;
+    padding-block: 3rem;
+    background-color: black;
+    text-align: center;
+}
+
+.solar-system-title {
+    font-size: var(--fs-800);
+}
+
+.planet-grid {
+    display: grid;
+    gap: 4rem;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 6rem;
+}
+
+/* PLANETER STYLE */
+.mercury {
+    max-width: 3rem;
+    animation: hover-large 12s infinite ease-in-out;
+}
+
+.venus {
+    max-width: 6rem;
+    animation: hover-large 9s infinite ease-in-out;
+}
+
+.earth {
+    max-width: 8rem;
+    animation: hover-large 10s infinite ease-in-out;
+}
+
+.mars {
+    max-width: 6rem;
+    animation: hover-large 11s infinite ease-in-out;
+}
+
+.sun {
+    max-width: 24rem;
+    animation: rotation 180s infinite linear;
+}
+    /* ROTASJON ANIMASJON SOL */
+    @keyframes rotation {
+        0% {transform: rotate3d(0, 0, 1, 0deg);}
+        25% {transform: rotate3d(0, 0, 1, 90deg);}
+        50% {transform: rotate3d(0, 0, 1, 180deg);}
+        75% {transform: rotate3d(0, 0, 1, 270deg);}
+        100% {transform: rotate3d(0, 0, 1, 360deg);}
+    }
+
+.jupiter {
+    max-width: 16rem;
+    animation: hover-small 9s infinite ease-in-out;
+}
+
+.saturn {
+    max-width: 18rem;
+    animation: hover-small 6s infinite ease-in-out;
+}
+
+.uranus {
+    max-width: 12rem;
+    animation: hover-small 8s infinite ease-in-out;
+}
+
+.neptune {
+    max-width: 8rem;
+    animation: hover-small 7s infinite ease-in-out;
+}
+
+/* ANIMASJON PLANTETER */
+@keyframes hover-small {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes hover-large {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+}
+
+.divider-bottom {
+    min-height: 10rem;
+    background-image: linear-gradient(to top, transparent, white, black);
+}
