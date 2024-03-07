@@ -33,7 +33,7 @@
 /* SOLAR SYSTEM SEKSJON MED SVG GRAFIKK */
 .divider-top {
     min-height: 10rem;
-    background-image: linear-gradient(to bottom, transparent, white, black);
+    background-image: linear-gradient(to bottom, transparent, var(--clr-bg-light), black);
 }
 
 .solar-system {
@@ -43,7 +43,7 @@
     align-items: center;
     padding-inline: 2rem;
     color: var(--clr-txt-light);
-    background-image: url(/images/background/space-black-pixel-bg.png);
+    background-image: url(../images/background/space-black-pixel-bg.png);
 }
 
 .solar-system__information {
@@ -142,5 +142,5 @@
 
 .divider-bottom {
     min-height: 10rem;
-    background-image: linear-gradient(to top, transparent, white, black);
+    background-image: linear-gradient(to top, transparent, var(--clr-bg-light), black);
 }
