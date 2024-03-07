@@ -17,6 +17,7 @@
 
     /* PRIMÆR FARGER */
     --clr-heading: hsl(215, 58%, 13%);
+    --clr-accent-pink: hsl(343, 57%, 62%);
 
     /* NØYTRAL FARGER */
     --clr-bg-light: hsl(261, 100%, 97%);
@@ -67,7 +68,7 @@ main {
 
 /* HEADER SEKSJON */
 .primary-header {
-    background-color: var(--clr-heading)
+    background-color: var(--clr-heading);
 }
 
 .header-nav-bar {
