@@ -76,6 +76,13 @@ main {
     border-bottom: 1px solid hsla(260, 100%, 97%, 0.415);
 }
 
+.logo-link {
+    color: var(--clr-txt-light);
+    font-size: var(--fs-700);
+    font-family: var(--ff-special);
+    text-decoration: none;
+}
+
 .hdr-nav-ul {
     display: flex;
     gap: 1rem;
@@ -93,20 +100,13 @@ main {
     text-decoration: underline;
 }
 
-.logo-link {
-    color: var(--clr-txt-light);
-    font-size: var(--fs-700);
-    font-family: var(--ff-special);
-    text-decoration: none;
-}
-
 .intro-vector-bg {
     display: flex;
     align-items: center;
     min-height: 30rem;
     background-position: top right;
     background-size: cover;
-    background-image: url(/images/background/space-vector-bg.svg);
+    background-image: url(../images/background/space-vector-bg.svg);
 }
 
 .title-txt {
