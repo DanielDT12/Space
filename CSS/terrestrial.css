@@ -1,0 +1,63 @@
+:root {
+    /* FONT SIZE */
+    --fs-800: 3.5rem;
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+
+    /* VANLIG FONT ALLE ELEMENTER */
+    --ff-regular:"Nunito", sans-serif;
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    /* SPESIAL FONT OVERSKRIFT */
+    --ff-special: "Anta", sans-serif;
+    --fw-special: 400;
+
+    /* PRIMÆR FARGER */
+    --clr-heading: hsl(215, 58%, 13%);
+
+    /* NØYTRAL FARGER */
+    --clr-bg-light: hsl(261, 100%, 97%);
+    --clr-txt: hsl(252, 45%, 2%);
+    --clr-txt-light: var(--clr-bg-light);
+
+    /* BORDER RADIUS */
+    --brdr-rad-light: .5rem;
+    --brdr-rad-normal: 1rem;
+    --brdr-rad-heavy: 2rem;
+}
+
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.1;
+}
+
+body {
+    font-family: var(--ff-regular);
+}
+
+main {
+    min-height: 100vh;
+}

@@ -27,7 +27,6 @@
     --brdr-rad-light: .5rem;
     --brdr-rad-normal: 1rem;
     --brdr-rad-heavy: 2rem;
-
 }
 
 /* CSS RESET */
@@ -138,3 +137,5 @@ main {
 .ftr-container {
     color: var(--clr-txt-light);
 }
+
+/*TEST*/
