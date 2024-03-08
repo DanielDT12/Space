@@ -107,7 +107,6 @@ main {
     display: flex;
     align-items: center;
     min-height: 30rem;
-    border-bottom: 2px solid hsl(176, 82%, 37%);
     background-position: top right;
     background-size: cover;
     background-image: url(../images/background/space-vector-bg.svg);
@@ -136,6 +135,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 10rem;
+    border-top: 1px solid hsla(260, 100%, 97%, 0.415);
     background-color: var(--clr-heading);
 }
 
