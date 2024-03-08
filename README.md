@@ -30,3 +30,15 @@ er gjentagende på flere sider
 -Lagt til seksjon om melkeveien med bilder og data table
 
 -Endret plassering på ting i CSS
+
+## Daniel 8/3/2024
+
+-Lagt til newsletter sign up seksjon i html
+
+-Stylet newsletter sign up seksjon i CSS
+
+-Ryddet i index html side
+
+-Oppdatert figma fil
+
+-Fikset små ting i style.css fil
