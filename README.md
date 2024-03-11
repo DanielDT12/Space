@@ -24,3 +24,21 @@ er gjentagende på flere sider
 -Lagt til sol system grid container i index html
 
 -Laget egen CSS til main seksjon i index og stylet sol system grafikk
+
+## Daniel 7/3/2024
+
+-Lagt til seksjon om melkeveien med bilder og data table
+
+-Endret plassering på ting i CSS
+
+## Daniel 8/3/2024
+
+-Lagt til newsletter sign up seksjon i html
+
+-Stylet newsletter sign up seksjon i CSS
+
+-Ryddet i index html side
+
+-Oppdatert figma fil
+
+-Fikset små ting i style.css fil
