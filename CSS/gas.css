@@ -1,0 +1,95 @@
+:root {
+    /* FONT SIZE */
+    --fs-800: 3.5rem;
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+
+    /* VANLIG FONT ALLE ELEMENTER */
+    --ff-regular:"Nunito", sans-serif;
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    /* SPESIAL FONT OVERSKRIFT */
+    --ff-special: "Anta", sans-serif;
+    --fw-special: 400;
+
+    /* PRIMÆR FARGER */
+    --clr-heading: hsl(215, 58%, 13%);
+    --clr-accent-pink: hsl(343, 57%, 62%);
+
+    /* NØYTRAL FARGER */
+    --clr-bg-light: hsl(261, 100%, 97%);
+    --clr-txt: hsl(252, 45%, 2%);
+    --clr-txt-light: var(--clr-bg-light);
+    --clr-txt-gray: hsl(258, 10%, 75%);
+
+    /* BORDER RADIUS */
+    --brdr-rad-light: .5rem;
+    --brdr-rad-normal: 1rem;
+    --brdr-rad-heavy: 2rem;
+
+}
+
+.intro-gas-giants-bg {
+    display: flex;
+    align-items: center;
+    min-height: 36rem;
+    background-image: url(../images/gas-planets/gas-giants.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gas-planets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 4rem;
+    border-top: 2px solid var(--clr-txt);
+    border-bottom: 2px solid var(--clr-txt);
+
+    > img {
+        max-width: 579px;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+.gas-info::before {
+    content: '"';
+    position: absolute;
+    margin: -110px;
+    font-size: 300px;
+    color: var(--clr-heading);
+    opacity: .2;
+    z-index: -1;
+}
+
+.gas-info {
+    position: relative;
+    max-width: 40rem;
+    margin-left: 10rem;
+
+    > h2 {
+        font-family: var(--ff-special);
+        font-size: var(--fs-800);
+        margin-bottom: 1rem;
+    }
+
+    > p {
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-500);
+        line-height: 1.4;
+    }
+}
+
+.gas-info::after {
+    content: '"';
+    position: absolute;
+    margin: -180px 630px;
+    font-size: 300px;
+    color: var(--clr-heading);
+    opacity: .2;
+    z-index: -1;
+}
