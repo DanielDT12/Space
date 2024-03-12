@@ -281,3 +281,22 @@
     cursor: pointer;
     box-shadow: 0 0 .25rem black;
 }
+
+@media only screen and (max-width: 880px) {
+    .milky-way-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galaxy-table {
+        & td {
+            min-width: 270px;
+        }
+    }
+
+    .galaxy-table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+    
