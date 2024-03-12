@@ -97,6 +97,16 @@
     opacity: .4;
 }
 
+.wiki-link {
+    color: var(--clr-accent-pink);
+    text-decoration: none;
+}
+
+.wiki-link:hover, .wiki-link:focus {
+    text-decoration: underline;
+    text-decoration-color: var(--clr-txt);
+}
+
 
 /* UTILITY CLASS */
 .margin-inline-auto {
