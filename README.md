@@ -48,3 +48,9 @@ er gjentagende på flere sider
 -Fikset ferdig header og footer på index side
 
 -Startet på gas og is planet side
+
+## Daniel 12/3/2024
+
+-Lagt til tekst informasjon og stylet gas og is planet side
+
+-Startet å lage media queries til sider
