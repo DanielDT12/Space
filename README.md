@@ -1,4 +1,4 @@
-### Read me
+### ARBEIDS LOGG
 
 ## Daniel 4/3/2024
 
@@ -42,3 +42,9 @@ er gjentagende på flere sider
 -Oppdatert figma fil
 
 -Fikset små ting i style.css fil
+
+## Daniel 11/3/2024
+
+-Fikset ferdig header og footer på index side
+
+-Startet på gas og is planet side
