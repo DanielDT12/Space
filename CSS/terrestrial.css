@@ -1,0 +1,139 @@
+:root {
+    /* FONT SIZE */
+    --fs-800: 3.5rem;
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+
+    /* VANLIG FONT ALLE ELEMENTER */
+    --ff-regular:"Nunito", sans-serif;
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    /* SPESIAL FONT OVERSKRIFT */
+    --ff-special: "Anta", sans-serif;
+    --fw-special: 400;
+
+    /* PRIMÆR FARGER */
+    --clr-heading: hsl(215, 58%, 13%);
+
+    /* NØYTRAL FARGER */
+    --clr-bg-light: hsl(261, 100%, 97%);
+    --clr-txt: hsl(252, 45%, 2%);
+    --clr-txt-light: var(--clr-bg-light);
+
+    /* BORDER RADIUS */
+    --brdr-rad-light: .5rem;
+    --brdr-rad-normal: 1rem;
+    --brdr-rad-heavy: 2rem;
+}
+
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.1;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+    font-family: var(--ff-regular);
+    line-height: 1.5;
+}
+
+main {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.earth {
+    margin-top: 150px;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background/space\ background.jpg);
+    background-size: cover; /* This will make the background image cover the entire container */
+    background-repeat: no-repeat; /* This will prevent the background image from repeating */
+    background-position: center; /* This will center the background image */
+
+}
+
+.earthpicture {
+    width: 800px;
+    height: 800px;
+    background-image: url(../images/earth.gif);
+    background-size: cover;
+    animation: levitate 5s infinite alternate;
+}
+
+.earthpic {
+    width: 753px;
+    height: 745px;
+    margin-left: 21px;
+    margin-top: 38px;
+    transition: opacity 0.5s ease; 
+    animation: levitate 5s infinite alternate; /* Apply the levitate animation */
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0); /* Initial position */
+  }
+  100% {
+    transform: translateY(-5px); /* Final position */
+  }
+}
+
+.earthpic:hover {
+    opacity: 0;
+}
+
+.text-box {
+    padding: 30px;
+    background-color:rgba(0, 0, 0, 0.875) ;
+    max-width: 35vw;
+    max-height: 90%;
+    color: var(--clr-txt-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--brdr-rad-normal);
+    overflow: auto; /* Add overflow property to enable scrolling if necessary */
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+    max-height: 800px;
+    overflow-wrap: break-word; /* Add overflow-wrap to allow wrapping of long words */
+}
+
+.planetname {
+    margin-bottom: 20px;
+    font-family: var(--ff-special);
+    font-size: var(--fs-800);
+}
