@@ -113,14 +113,6 @@ main {
     background-image: url(../images/background/space-vector-bg.svg);
 }
 
-.title-txt {
-    margin-bottom: .5rem;
-    font-size: var(--fs-800);
-    font-family: var(--ff-special);
-    letter-spacing: .4rem;
-    text-transform: uppercase;
-}
-
 .info-txt {
     max-width: 30rem;
     margin-inline: 6rem;
@@ -128,6 +120,14 @@ main {
     padding: 2rem;
     background-color: hsla(255, 40%, 2%, 0.8);
     color: var(--clr-txt-light);
+}
+
+.title-txt {
+    margin-bottom: .5rem;
+    font-size: var(--fs-800);
+    font-family: var(--ff-special);
+    letter-spacing: .4rem;
+    text-transform: uppercase;
 }
 
 /* FOOTER */
