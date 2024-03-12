@@ -32,6 +32,7 @@
 
 }
 
+/* INTRODUKSJON OM GAS OG IS PLANETER MED PLANETER SOM BAKGRUNN */
 .intro-gas-giants-bg {
     display: flex;
     align-items: center;
@@ -42,6 +43,7 @@
     background-position: center;
 }
 
+/* SEKSJON OM GAS OG IS PLANETER */
 .gas-planets {
     display: flex;
     justify-content: space-between;
@@ -53,23 +55,24 @@
     > img {
         max-width: 579px;
         aspect-ratio: 1 / 1;
+        z-index: 1;
     }
 }
 
+/* STOR " BAK TEKST */
 .gas-info::before {
     content: '"';
     position: absolute;
     margin: -110px;
     font-size: 300px;
-    color: var(--clr-heading);
-    opacity: .2;
-    z-index: -1;
+    color: rgb(0, 0, 0);
+    opacity: .4;
 }
 
+/* TEKST FELT MED NESTED SELECTOR */
 .gas-info {
     position: relative;
     max-width: 40rem;
-    margin-left: 10rem;
 
     > h2 {
         font-family: var(--ff-special);
@@ -84,12 +87,24 @@
     }
 }
 
+/* STOR " BAK TEKST */
 .gas-info::after {
     content: '"';
     position: absolute;
     margin: -180px 630px;
     font-size: 300px;
-    color: var(--clr-heading);
-    opacity: .2;
-    z-index: -1;
+    color: rgb(0, 0, 0);
+    opacity: .4;
+}
+
+
+/* UTILITY CLASS */
+.margin-inline-auto {
+    margin-inline: auto;
+    
+}
+
+.bg-blue-white-txt {
+    color: var(--clr-txt-light);
+    background-color: var(--clr-heading);
 }
