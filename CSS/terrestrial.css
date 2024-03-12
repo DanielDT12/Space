@@ -102,7 +102,7 @@ main {
 
 .earth {
     margin-top: 150px;
-    height: 1000px;
+    height: 1100px;
     background-color: rgb(255, 255, 255);
     display: flex;
     gap: 10vw;
@@ -176,8 +176,60 @@ p {
 
 .mars {
     flex-direction: row-reverse;
+    margin-top: 150px;
+    height: 1100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 18vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background/marsbg.jpg);
+    background-size: cover; /* This will make the background image cover the entire container */
+    background-repeat: no-repeat; /* This will prevent the background image from repeating */
+    background-position: center; /* This will center the background image */
+    
 }
 
 .marspic {
 
+    animation: levitate 2s infinite alternate;
+}
+
+.venus {
+    flex-direction: row;
+    margin-top: 150px;
+    height: 1100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 18vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background/venusbg.jpg);
+    background-size: cover; /* This will make the background image cover the entire container */
+    background-repeat: no-repeat; /* This will prevent the background image from repeating */
+    background-position: center; /* This will center the background image */
+}
+
+.venuspicture {
+    animation: levitate 2s infinite alternate;
+}
+
+.mercury {
+    flex-direction: row-reverse;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    height: 1100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 18vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background/marcurybg.jpg);
+    background-size: cover; /* This will make the background image cover the entire container */
+    background-repeat: no-repeat; /* This will prevent the background image from repeating */
+    background-position: center; /* This will center the background image */
+}
+
+.mercurypicture {
+    animation: levitate 2s infinite alternate;
 }
