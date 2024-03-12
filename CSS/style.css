@@ -166,6 +166,7 @@ main {
 
 .ftr-nav-ul {
     list-style: none;
+    padding: 0;
 
     > li {
         margin-block: .25rem;
@@ -206,5 +207,31 @@ main {
 
     > li > a:hover {   
         text-decoration: underline;
+    }
+}
+
+/* MEDIA QUEIRES */
+@media only screen and (max-width: 1020px) {
+    .hdr-nav-ul {
+        display: flex;
+        gap: .25rem;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .info-txt {
+        margin-inline: auto;
+    }
+}
+
+
+@media only screen and (max-width: 680px) {
+    .ftr-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
     }
 }
