@@ -55,7 +55,7 @@ h1, h2, h3, h4 {
 }
 
 body {
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(10, 10, 10);
     font-family: var(--ff-regular);
     line-height: 1.5;
 }
@@ -64,6 +64,40 @@ main {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+}
+
+
+.terrabox {
+    margin-top: 150px;
+    display: flex;
+    background-color: red;
+    height: 70.2vh;
+    width: 100%;
+    background-image: url(../images/Terrestrial_planet_sizes2.jpg);
+    background-position: center;
+    background-size: 95%;
+}
+
+.text-box-terra {
+    padding: 30px;
+    background-color:rgba(0, 0, 0, 0.875) ;
+    max-width: 32vw;
+    max-height: 65%;
+    color: var(--clr-txt-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--brdr-rad-normal);
+    overflow: auto; 
+    margin-left:11vw;
+    margin-top: 12vh;
+}
+
+.terratitle {
+    margin-bottom: 20px;
+    font-family: var(--ff-special);
+    font-size: var(--fs-800);
 }
 
 .earth {
@@ -80,6 +114,8 @@ main {
     background-position: center; /* This will center the background image */
 
 }
+
+
 
 .earthpicture {
     width: 800px;
@@ -127,7 +163,7 @@ main {
 
 p {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     max-height: 800px;
     overflow-wrap: break-word; /* Add overflow-wrap to allow wrapping of long words */
 }
@@ -136,4 +172,12 @@ p {
     margin-bottom: 20px;
     font-family: var(--ff-special);
     font-size: var(--fs-800);
+}
+
+.mars {
+    flex-direction: row-reverse;
+}
+
+.marspic {
+
 }
