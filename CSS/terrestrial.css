@@ -70,19 +70,20 @@ main {
 .terrabox {
     margin-top: 150px;
     display: flex;
-    background-color: red;
+    background-color: rgb(40, 39, 39);
     height: 70.2vh;
     width: 100%;
     background-image: url(../images/Terrestrial_planet_sizes2.jpg);
     background-position: center;
-    background-size: 95%;
+    background-size: 100%;
+    background-repeat: no-repeat; /* Prevent background image from repeating */
 }
 
 .text-box-terra {
     padding: 30px;
     background-color:rgba(0, 0, 0, 0.875) ;
     max-width: 32vw;
-    max-height: 65%;
+    max-height: 85%;
     color: var(--clr-txt-light);
     display: flex;
     flex-direction: column;
@@ -91,7 +92,7 @@ main {
     border-radius: var(--brdr-rad-normal);
     overflow: auto; 
     margin-left:11vw;
-    margin-top: 12vh;
+    margin-top: 3vh;
 }
 
 .terratitle {
@@ -163,7 +164,7 @@ main {
 
 p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     max-height: 800px;
     overflow-wrap: break-word; /* Add overflow-wrap to allow wrapping of long words */
 }
@@ -190,10 +191,28 @@ p {
     
 }
 
-.marspic {
-
+.marspicture {
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/mars.gif);
+    background-size: cover;
     animation: levitate 2s infinite alternate;
 }
+
+.marspic {
+    width: 378px;
+    height: 379px;
+    margin-left: 21px;
+    margin-top: 7px;
+    transition: opacity 0.5s ease; 
+    animation: levitate 3s infinite alternate; /* Apply the levitate animation */
+}
+
+.marspic:hover {
+    opacity: 0;
+}
+
+
 
 .venus {
     flex-direction: row;
@@ -201,7 +220,7 @@ p {
     height: 1100px;
     background-color: rgb(255, 255, 255);
     display: flex;
-    gap: 18vw;
+    gap: 15vw;
     justify-content: center;
     align-items: center;
     background-image: url(../images/background/venusbg.jpg);
@@ -211,7 +230,24 @@ p {
 }
 
 .venuspicture {
+    width: 800px;
+    height: 600px;
+    background-image: url(../images/venus.gif);
+    background-size: cover;
     animation: levitate 2s infinite alternate;
+}
+
+.venuspic {
+    width: 590px;
+    height: 590px;
+    margin-left: 106px;
+    margin-top: 9px;
+    transition: opacity 0.5s ease; 
+    animation: levitate 5s infinite alternate; /* Apply the levitate animation */
+}
+
+.venuspic:hover {
+    opacity: 0;
 }
 
 .mercury {
@@ -221,7 +257,7 @@ p {
     height: 1100px;
     background-color: rgb(255, 255, 255);
     display: flex;
-    gap: 18vw;
+    gap: 14vw;
     justify-content: center;
     align-items: center;
     background-image: url(../images/background/marcurybg.jpg);
@@ -231,5 +267,22 @@ p {
 }
 
 .mercurypicture {
+    width: 400px;
+    height: 416px;
+    background-image: url(../images/mercury.gif);
+    background-size: cover;
     animation: levitate 2s infinite alternate;
+}
+
+.mercurypic {
+    width: 425px;
+    height: 425px;
+    margin-left: 0px;
+    margin-top: 0px;
+    transition: opacity 0.5s ease; 
+    animation: levitate 5s infinite alternate; /* Apply the levitate animation */
+}
+
+.mercurypic:hover {
+    opacity: 0;
 }
