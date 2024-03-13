@@ -277,9 +277,14 @@
     font-size: var(--fs-400);
 }
 
-.submit-btn:hover {
+.submit-btn:hover, .submit-btn:focus {
     cursor: pointer;
+    background-color: hsl(215, 57%, 18%);
     box-shadow: 0 0 .25rem black;
+}
+
+.submit-btn:active {
+    scale: 0.95;
 }
 
 @media only screen and (max-width: 880px) {
@@ -290,7 +295,7 @@
 
     .galaxy-table {
         & td {
-            min-width: 270px;
+            min-width: 230px;
         }
     }
 
@@ -299,4 +304,32 @@
         overflow-x: auto;
     }
 }
+
+@media only screen and (max-width: 680px) {
+    .milky-way-info {
+        text-align: center;
+        & h2 {
+            font-size: var(--fs-700);
+            font-family: var(--ff-special);
+        }
     
+        & p {
+            font-size: var(--fs-400);
+            font-weight: var(--fw-bold);
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .milky-way-container {
+        margin-inline: 1rem;
+    }
+
+    .solar-system {
+        padding-inline: 1rem;
+    }
+
+    .newsletter-container {
+        margin-inline: 1rem;
+    }
+}
