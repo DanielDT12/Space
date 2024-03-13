@@ -54,3 +54,9 @@ er gjentagende på flere sider
 -Lagt til tekst informasjon og stylet gas og is planet side
 
 -Startet å lage media queries til sider
+
+## Daniel 13/3/2024
+
+-Gjort ferdig media queries til index.html og gas.html
+
+-Små endringer i style til linker og buttons
