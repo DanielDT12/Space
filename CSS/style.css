@@ -1,3 +1,4 @@
+/* CUSTOM PROPERTIES */
 :root {
     /* FONT SIZE */
     --fs-800: 3.5rem;
@@ -32,7 +33,6 @@
 }
 
 /* CSS RESET */
-
 *,
 *::before,
 *::after {
@@ -104,6 +104,7 @@ main {
     text-decoration: underline;
 }
 
+/* THE UNIVERSE INFO CONTAINER MED BAKGRUNNS BILDE */
 .intro-vector-bg {
     display: flex;
     align-items: center;
@@ -147,6 +148,7 @@ main {
     color: var(--clr-txt-light);
 }
 
+/* GitHub REPO LINK MED NESTED SELECTOR */
 .ftr-personal-links {
     text-align: center;
 
@@ -165,6 +167,7 @@ main {
     }
 }
 
+/* SIDE NAVIGERING FOOTER MED NESTED SELECTOR */
 .ftr-nav-ul {
     list-style: none;
     padding: 0;
@@ -193,6 +196,7 @@ main {
     }
 }
 
+/* UL FOOTER MED NESTED SELECTOR */
 .ul-referance {
     padding: 0;
     list-style: none;

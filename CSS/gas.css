@@ -1,3 +1,4 @@
+/* CUSTOM PROPERTIES */
 :root {
     /* FONT SIZE */
     --fs-800: 3.5rem;
@@ -57,22 +58,8 @@
     }
 }
 
-/* STOR " BAK TEKST (LEVNER DENNE I KODEN, SIDEN DET VAR 
-EN TING JEG EGENTLIG VILLE HA MED MEN KLARTE IKKE OG POSISJONERE DEN 
-RETT Å GJØRE DEN RESPOSNIV, DEN PASSER BRA PÅ STOR SKJERM, 1920x1080px) */
-
-    /* .gas-info::before {
-    content: '"';
-    position: absolute;
-    margin: -110px;
-    font-size: 300px;
-    color: rgb(0, 0, 0);
-    opacity: .4;
-} */
-
 /* TEKST FELT MED NESTED SELECTOR */
 .gas-info {
-    /* position: relative; holder originalt til pseudo elementer som er de aktivert */
     max-width: 40rem;
 
     > h2 {
@@ -87,20 +74,6 @@ RETT Å GJØRE DEN RESPOSNIV, DEN PASSER BRA PÅ STOR SKJERM, 1920x1080px) */
         line-height: 1.4;
     }
 }
-
-/* STOR " BAK TEKST (LEVNER DENNE I KODEN, SIDEN DET VAR 
-EN TING JEG EGENTLIG VILLE HA MED MEN KLARTE IKKE OG POSISJONERE DEN 
-RETT Å GJØRE DEN RESPOSNIV, DEN PASSER BRA PÅ STOR SKJERM, 1920x1080px) */
-
-/* .gas-info::after {
-    content: '"';
-    position: absolute;
-    margin-left: auto;
-    margin: -180px 630px;
-    font-size: 300px;
-    color: rgb(0, 0, 0);
-    opacity: .4;
-} */
 
 /* ANCHOR TAG I GAS-INFO TEKST */
 .wiki-link {
@@ -158,7 +131,7 @@ RETT Å GJØRE DEN RESPOSNIV, DEN PASSER BRA PÅ STOR SKJERM, 1920x1080px) */
     }
 
     .gas-ice-img {
-        border-radius: 1rem;
+        border-radius: var(--brdr-rad-normal);
         box-shadow: 0 0 2rem black;
         margin-bottom: 1.5rem;
     }
