@@ -1,0 +1,106 @@
+:root {
+    /* FONT SIZE */
+    --fs-800: 3.5rem;
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+
+    /* VANLIG FONT ALLE ELEMENTER */
+    --ff-regular:"Nunito", sans-serif;
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    /* SPESIAL FONT OVERSKRIFT */
+    --ff-special: "Anta", sans-serif;
+    --fw-special: 400;
+
+    /* PRIMÆR FARGER */
+    --clr-heading: hsl(215, 58%, 13%);
+
+    /* NØYTRAL FARGER */
+    --clr-bg-light: hsl(261, 100%, 97%);
+    --clr-txt: hsl(252, 45%, 2%);
+    --clr-txt-light: var(--clr-bg-light);
+
+    /* BORDER RADIUS */
+    --brdr-rad-light: .5rem;
+    --brdr-rad-normal: 1rem;
+    --brdr-rad-heavy: 2rem;
+}
+
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.1;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    font-family: var(--ff-regular);
+    line-height: 1.5;
+}
+
+main {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.sun {
+    display: flex;
+    background-image: url(../images/sun.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1039px;
+    width: 100%;
+}
+
+.text-box-sun {
+    padding: 30px;
+    background-color:rgba(0, 0, 0, 0.662) ;
+    max-width: 32vw;
+    max-height: 75%;
+    color: var(--clr-txt-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--brdr-rad-normal);
+    overflow: auto; 
+    margin-left: 60vw;
+    margin-top: 14vh;
+}
+
+.suntitle {
+    margin-bottom: 20px;
+    font-family: var(--ff-special);
+    font-size: var(--fs-800);
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    max-height: 800px;
+    overflow-wrap: break-word; /* Add overflow-wrap to allow wrapping of long words */
+}
