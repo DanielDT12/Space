@@ -70,3 +70,31 @@ er gjentagende på flere sider
 ## Daniel 15/3/2024
 
 -Synce opp alt til github å debugge side
+
+
+
+### Kilder
+
+(Har lagt til noen i html footer)
+
+- https://www.pexels.com/photo/photo-of-galaxy-207529/
+
+- https://www.vecteezy.com/vector-art/8029888-galaxy-space-abstract-background-with-star-and-comet-shapes-vector"
+
+- https://www.svgrepo.com/ (Planet SVG grid og favicon)
+
+- https://en.wikipedia.org/wiki/List_of_nearest_galaxies
+
+- https://en.wikipedia.org/wiki/Milky_Way
+
+- https://en.wikipedia.org/wiki/Jupiter
+
+- https://en.wikipedia.org/wiki/Saturn
+
+- https://en.wikipedia.org/wiki/Uranus
+
+- https://en.wikipedia.org/wiki/Neptune
+
+- https://www.google.com/search?q=space%20pixel%20art&udm=2&uds=AMwkrPvswS92c7VMQrYYRTqoTsMw7DNtwNm6VtR0eMtdwApfAgRL5espcm81Hua9JQWwt9xWjcHZgGFrHSlUwo9fk_PJCeAH7vPkNkdkBmIRdsolbdbW23YpSNkuz3t-KkjqZou-3eSgMnJLGQ-gREeXgfbe9YrDbwR3DGFZwM_7GdYFPUt6qaNJwk9dP23C-k_qN03x2uS_iL7Q2U2ZJBQ5eGWI7Wf3FCcYcGu6J2V8qWJLvauX_4U&tbs=rimg:CQsOhmDyJqjeYV-iXTxXHbQrsgIAwAIA2AIA4AIA&cs=1&hl=no&sa=X&ved=0CCEQuIIBahcKEwjI_ODIjPaEAxUAAAAAHQAAAAAQBw&biw=1912&bih=958&dpr=1#vhid=mbB1-oJK63iEeM&vssid=mosaic (LASTET NED RETT FRA GOOGLE IMAGES)
+
+- https://kids.britannica.com/kids/article/solar-system/353789
