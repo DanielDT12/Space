@@ -96,3 +96,15 @@ er gjentagende på flere sider
 - https://www.google.com/search?q=space%20pixel%20art&udm=2&uds=AMwkrPvswS92c7VMQrYYRTqoTsMw7DNtwNm6VtR0eMtdwApfAgRL5espcm81Hua9JQWwt9xWjcHZgGFrHSlUwo9fk_PJCeAH7vPkNkdkBmIRdsolbdbW23YpSNkuz3t-KkjqZou-3eSgMnJLGQ-gREeXgfbe9YrDbwR3DGFZwM_7GdYFPUt6qaNJwk9dP23C-k_qN03x2uS_iL7Q2U2ZJBQ5eGWI7Wf3FCcYcGu6J2V8qWJLvauX_4U&tbs=rimg:CQsOhmDyJqjeYV-iXTxXHbQrsgIAwAIA2AIA4AIA&cs=1&hl=no&sa=X&ved=0CCEQuIIBahcKEwjI_ODIjPaEAxUAAAAAHQAAAAAQBw&biw=1912&bih=958&dpr=1#vhid=mbB1-oJK63iEeM&vssid=mosaic (LASTET NED RETT FRA GOOGLE IMAGES)
 
 - https://kids.britannica.com/kids/article/solar-system/353789
+
+- https://en.wikipedia.org/wiki/Terrestrial_planet
+
+- glemte å skrive ned noen kilder til bildene mine og fant ikke de lett, så mangler litt bildekilder.
+
+## Johan 15/03/2024
+
+-eg har laget terrestrial og sun sidene. har lagt til animations for å få en space feel
+
+-har laget sidene mine responsive slik at de ser bra ut for alle forskjellige skjermstørrelser og telefoner
+
+-oppdatert figma fil
