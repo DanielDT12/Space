@@ -60,3 +60,13 @@ er gjentagende på flere sider
 -Gjort ferdig media queries til index.html og gas.html
 
 -Små endringer i style til linker og buttons
+
+## Daniel 14/3/2024
+
+-Sett over kode å lagt til kommentarer
+
+-Gjennomgang av kode å sett hva som kunne vert gjort annerledes eller bedre
+
+## Daniel 15/3/2024
+
+-Synce opp alt til github å debugge side
