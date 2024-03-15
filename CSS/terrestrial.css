@@ -55,7 +55,7 @@ h1, h2, h3, h4 {
 }
 
 body {
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(10, 10, 10);
     font-family: var(--ff-regular);
     line-height: 1.5;
 }
@@ -66,9 +66,47 @@ main {
     padding: 0;
 }
 
+
+.terrabox {
+    margin-top: 150px;
+    display: flex;
+    background-color: rgb(40, 39, 39);
+    height: 70.2vh;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../images/Terrestrial_planet_sizes2.jpg);
+    background-size: cover; /* This will make the background image cover the entire container */
+    background-repeat: no-repeat; /* This will prevent the background image from repeating */
+    background-position: center; /* This will center the background image */
+}
+
+.text-box-terra {
+    padding: 30px;
+    background-color:rgba(0, 0, 0, 0.875) ;
+    /* max-width: 32vw; */
+    /* max-height: 85%; */
+    color: var(--clr-txt-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: left;
+    border-radius: var(--brdr-rad-normal);
+    overflow: auto; 
+    margin-left:11vw;
+    max-width: 35vw;
+    max-height: 90%;
+}
+
+.terratitle {
+    margin-bottom: 20px;
+    font-family: var(--ff-special);
+    font-size: var(--fs-800);
+}
+
 .earth {
     margin-top: 150px;
-    height: 1000px;
+    height: 1100px;
     background-color: rgb(255, 255, 255);
     display: flex;
     gap: 10vw;
@@ -80,6 +118,8 @@ main {
     background-position: center; /* This will center the background image */
 
 }
+
+
 
 .earthpicture {
     width: 800px;
@@ -127,7 +167,7 @@ main {
 
 p {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
     max-height: 800px;
     overflow-wrap: break-word; /* Add overflow-wrap to allow wrapping of long words */
 }
@@ -136,4 +176,207 @@ p {
     margin-bottom: 20px;
     font-family: var(--ff-special);
     font-size: var(--fs-800);
+}
+
+.mars {
+    flex-direction: row-reverse;
+    margin-top: 150px;
+    height: 1100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 18vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background/marsbg.jpg);
+    background-size: cover; /* This will make the background image cover the entire container */
+    background-repeat: no-repeat; /* This will prevent the background image from repeating */
+    background-position: center; /* This will center the background image */
+    
+}
+
+.marspicture {
+    width: 400px;
+    height: 400px;
+    background-image: url(../images/mars.gif);
+    background-size: cover;
+    animation: levitate 2s infinite alternate;
+}
+
+.marspic {
+    width: 378px;
+    height: 379px;
+    margin-left: 21px;
+    margin-top: 7px;
+    transition: opacity 0.5s ease; 
+    animation: levitate 3s infinite alternate; /* Apply the levitate animation */
+}
+
+.marspic:hover {
+    opacity: 0;
+}
+
+
+
+.venus {
+    flex-direction: row;
+    margin-top: 150px;
+    height: 1100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 9vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background/venusbg.jpg);
+    background-size: cover; /* This will make the background image cover the entire container */
+    background-repeat: no-repeat; /* This will prevent the background image from repeating */
+    background-position: center; /* This will center the background image */
+}
+
+.venuspicture {
+    width: 800px;
+    height: 600px;
+    background-image: url(../images/venus.gif);
+    background-size: cover;
+    animation: levitate 2s infinite alternate;
+}
+
+.venuspic {
+    width: 590px;
+    height: 590px;
+    margin-left: 106px;
+    margin-top: 9px;
+    transition: opacity 0.5s ease; 
+    animation: levitate 5s infinite alternate; /* Apply the levitate animation */
+}
+
+.venuspic:hover {
+    opacity: 0;
+}
+
+.mercury {
+    flex-direction: row-reverse;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    height: 1100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 14vw;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background/marcurybg.jpg);
+    background-size: cover; /* This will make the background image cover the entire container */
+    background-repeat: no-repeat; /* This will prevent the background image from repeating */
+    background-position: center; /* This will center the background image */
+}
+
+.mercurypicture {
+    width: 400px;
+    height: 416px;
+    background-image: url(../images/mercury.gif);
+    background-size: cover;
+    animation: levitate 2s infinite alternate;
+}
+
+.mercurypic {
+    width: 425px;
+    height: 425px;
+    margin-left: 0px;
+    margin-top: 0px;
+    transition: opacity 0.5s ease; 
+    animation: levitate 5s infinite alternate; /* Apply the levitate animation */
+}
+
+.mercurypic:hover {
+    opacity: 0;
+}
+
+@media screen and (max-width: 1530px) {
+    .terrabox {
+        justify-content: center;
+        align-self: center;
+    }
+
+    .text-box-terra {
+        max-width: 70%;
+    }
+    .terra-text {
+        font-size: 2rem;
+    }
+    .earth {
+        /* flex-direction: column; */
+    }
+    .earthpicture {
+        width: 560px; /* 70% of the original width (800px) */
+        height: 560px; /* 70% of the original height (800px) */
+
+
+    }
+    
+    .earthpic {
+        width: 530px; /* 70% of the original width (753px) */
+        height: 524px; /* 70% of the original height (745px) */
+        margin-left: 13px; /* Adjust margins */
+        margin-top: 20px; /* Adjust margins */
+    }
+
+    .venus{
+        gap: 6vw;
+    }
+
+    .venuspicture {
+        width: 640px; /* 80% of the original width (800px) */
+        height: 480px; /* 80% of the original height (600px) */
+    }
+    
+    .venuspic {
+        width: 472px; /* 80% of the original width (590px) */
+        height: 472px; /* 80% of the original height (590px) */
+        margin-left: 88px;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+    .terrabox {
+        justify-content: center;
+        align-self: center;
+    }
+
+    .text-box-terra {
+        max-width: 55%;
+
+    }
+    .terra-text {
+        font-size: 1.5rem;
+    }
+    .earth {
+        /* flex-direction: column; */
+    }
+    .earthpicture {
+        width: 560px; /* 70% of the original width (800px) */
+        height: 560px; /* 70% of the original height (800px) */
+
+
+    }
+    
+    .earthpic {
+        width: 530px; /* 70% of the original width (753px) */
+        height: 524px; /* 70% of the original height (745px) */
+        margin-left: 13px; /* Adjust margins */
+        margin-top: 20px; /* Adjust margins */
+    }
+
+    .venus{
+        gap: 6vw;
+    }
+
+    .venuspicture {
+        width: 640px; /* 80% of the original width (800px) */
+        height: 480px; /* 80% of the original height (600px) */
+    }
+    
+    .venuspic {
+        width: 472px; /* 80% of the original width (590px) */
+        height: 472px; /* 80% of the original height (590px) */
+        margin-left: 88px;
+  }
 }
