@@ -69,27 +69,27 @@ main {
 .sun {
     display: flex;
     background-image: url(../images/sun.png);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 1039px;
-    width: 100%;
+    background-size: cover; /* This will make the background image cover the entire container */
+    background-repeat: no-repeat; /* This will prevent the background image from repeating */
+    background-position: center; /* This will center the background image */
+    justify-content: right;
+
 }
 
 .text-box-sun {
     padding: 30px;
-    background-color:rgba(0, 0, 0, 0.662) ;
-    max-width: 32vw;
-    max-height: 75%;
+    background-color:rgba(0, 0, 0, 0.658) ;
     color: var(--clr-txt-light);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-items: left;
     border-radius: var(--brdr-rad-normal);
     overflow: auto; 
-    margin-left: 60vw;
-    margin-top: 14vh;
+    margin-top: 50px;
+    margin-right: 10%;
+    max-width: 35vw;
+    margin-bottom: 321px;
 }
 
 .suntitle {
@@ -103,4 +103,39 @@ p {
     font-size: 1.1rem;
     max-height: 800px;
     overflow-wrap: break-word; /* Add overflow-wrap to allow wrapping of long words */
+}
+
+
+/* Define styles for screens smaller than 1390px */
+@media screen and (max-width: 1390px) {
+
+    .text-box-sun {
+        max-width: 90%; /* Adjust the maximum width */
+        margin-top: 10vh; /* Adjust the top margin */
+        margin-right: 5%;
+
+    }
+}
+
+/* Define styles for screens smaller than 537px */
+@media screen and (max-width: 537px) {
+    .suntitle {
+        font-size: var(--fs-700); /* Adjust the font size */
+    }
+
+    p {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}
+
+/* Define styles for screens smaller than 385px */
+@media screen and (max-width: 385px) {
+
+    .suntitle {
+        font-size: var(--fs-500); /* Adjust the font size */
+    }
+
+    p {
+        font-size: 0.7rem; /* Adjust font size */
+    }
 }

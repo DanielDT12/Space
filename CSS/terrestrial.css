@@ -50,10 +50,6 @@ html {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4 {
-    line-height: 1.1;
-}
-
 body {
     background-color: rgb(10, 10, 10);
     font-family: var(--ff-regular);
@@ -71,7 +67,7 @@ main {
     margin-top: 150px;
     display: flex;
     background-color: rgb(40, 39, 39);
-    height: 70.2vh;
+    height: 73vh;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
@@ -84,8 +80,6 @@ main {
 .text-box-terra {
     padding: 30px;
     background-color:rgba(0, 0, 0, 0.875) ;
-    /* max-width: 32vw; */
-    /* max-height: 85%; */
     color: var(--clr-txt-light);
     display: flex;
     flex-direction: column;
@@ -99,7 +93,7 @@ main {
 }
 
 .terratitle {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: var(--ff-special);
     font-size: var(--fs-800);
 }
@@ -132,8 +126,7 @@ main {
 .earthpic {
     width: 753px;
     height: 745px;
-    margin-left: 21px;
-    margin-top: 38px;
+    margin: 38px 0 0 21px;
     transition: opacity 0.5s ease; 
     animation: levitate 5s infinite alternate; /* Apply the levitate animation */
 }
@@ -167,7 +160,7 @@ main {
 
 p {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     max-height: 800px;
     overflow-wrap: break-word; /* Add overflow-wrap to allow wrapping of long words */
 }
@@ -184,7 +177,7 @@ p {
     height: 1100px;
     background-color: rgb(255, 255, 255);
     display: flex;
-    gap: 18vw;
+    gap: 13vw;
     justify-content: center;
     align-items: center;
     background-image: url(../images/background/marsbg.jpg);
@@ -205,8 +198,7 @@ p {
 .marspic {
     width: 378px;
     height: 379px;
-    margin-left: 21px;
-    margin-top: 7px;
+    margin: 7px 0 0 21px;
     transition: opacity 0.5s ease; 
     animation: levitate 3s infinite alternate; /* Apply the levitate animation */
 }
@@ -243,8 +235,7 @@ p {
 .venuspic {
     width: 590px;
     height: 590px;
-    margin-left: 106px;
-    margin-top: 9px;
+    margin: 9px 0 0 106px;
     transition: opacity 0.5s ease; 
     animation: levitate 5s infinite alternate; /* Apply the levitate animation */
 }
@@ -255,8 +246,7 @@ p {
 
 .mercury {
     flex-direction: row-reverse;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin: 150px 0;
     height: 1100px;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -280,8 +270,7 @@ p {
 .mercurypic {
     width: 425px;
     height: 425px;
-    margin-left: 0px;
-    margin-top: 0px;
+    margin: 0px;
     transition: opacity 0.5s ease; 
     animation: levitate 5s infinite alternate; /* Apply the levitate animation */
 }
@@ -290,21 +279,25 @@ p {
     opacity: 0;
 }
 
-@media screen and (max-width: 1530px) {
+@media screen and (max-width: 1560px) {
     .terrabox {
         justify-content: center;
         align-self: center;
+        margin-top: 50px;
     }
 
     .text-box-terra {
-        max-width: 70%;
+        max-width: 80%;
+        margin-left: 0px;
     }
     .terra-text {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
+
     .earth {
-        /* flex-direction: column; */
+        margin-top: 50px;
     }
+
     .earthpicture {
         width: 560px; /* 70% of the original width (800px) */
         height: 560px; /* 70% of the original height (800px) */
@@ -321,6 +314,7 @@ p {
 
     .venus{
         gap: 6vw;
+        margin-top: 50px;
     }
 
     .venuspicture {
@@ -332,35 +326,76 @@ p {
         width: 472px; /* 80% of the original width (590px) */
         height: 472px; /* 80% of the original height (590px) */
         margin-left: 88px;
+  }
+
+  .mars {
+    margin-top: 50px;
+  }
+
+  .mercury {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
-@media screen and (max-width: 1225px) {
-    .terrabox {
-        justify-content: center;
-        align-self: center;
-    }
-
-    .text-box-terra {
-        max-width: 55%;
-
-    }
+@media screen and (max-width: 1280px) {
     .terra-text {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
-    .earth {
-        /* flex-direction: column; */
-    }
-    .earthpicture {
-        width: 560px; /* 70% of the original width (800px) */
-        height: 560px; /* 70% of the original height (800px) */
 
+    p {
+        font-size: 1rem;
+    }
+
+    .earth {
+        flex-direction: column;
+        gap: 7vh;
+    }
+
+    .text-box {
+        max-width: 80%;
+        max-height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: auto; /* Add overflow property to enable scrolling if necessary */
 
     }
     
+    .venus{
+       flex-direction: column;
+    }
+
+    .mercury {
+        flex-direction: column;
+    }
+    
+    .mars {
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 880px) {
+
+    p {
+        font-size: 1rem;
+    }
+
+    .terra-text {
+        font-size: 1rem;
+    }
+
+    .earthpicture {
+        width: 448px; /* 80% of the current width (560px) */
+        height: 448px; /* 80% of the current height (560px) */
+    }
+    
     .earthpic {
-        width: 530px; /* 70% of the original width (753px) */
-        height: 524px; /* 70% of the original height (745px) */
+        width: 424px; /* 80% of the current width (530px) */
+        height: 419.52px; /* 80% of the current height (524px) */
         margin-left: 13px; /* Adjust margins */
         margin-top: 20px; /* Adjust margins */
     }
@@ -370,13 +405,128 @@ p {
     }
 
     .venuspicture {
-        width: 640px; /* 80% of the original width (800px) */
-        height: 480px; /* 80% of the original height (600px) */
+        width: 448px; /* 70% of the current width (640px) */
+        height: 336px; /* 70% of the current height (480px) */
     }
     
     .venuspic {
-        width: 472px; /* 80% of the original width (590px) */
-        height: 472px; /* 80% of the original height (590px) */
-        margin-left: 88px;
-  }
+        width: 333px; /* 70% of the current width (472px) */
+        height: 333px; /* 70% of the current height (472px) */
+        margin-left: 58px; /* 70% of the current margin-left (88px) */
+        margin-top: 6px;
+    }
+
+    .mercurypicture {
+        width: 320px; /* 80% of the current width (400px) */
+        height: 332.8px; /* 80% of the current height (416px) */
+    }
+    
+    .mercurypic {
+        width: 340px; /* 80% of the current width (425px) */
+        height: 340px; /* 80% of the current height (425px) */
+    }
+
+
+}
+
+@media screen and (max-width: 547px) {
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .terratitle {
+        font-size: 2rem;
+    }
+
+    .planetname {
+        font-size: 2rem;
+    }
+
+    .terra-text {
+        font-size: 0.9rem;
+    }
+
+    .earthpicture {
+        width: 358.4px; /* 80% of the current width (448px) */
+        height: 358.4px; /* 80% of the current height (448px) */
+    }
+    
+    .earthpic {
+        width: 339.2px; /* 80% of the current width (424px) */
+        height: 335.616px; /* 80% of the current height (419.52px) */
+        margin-left: 10.4px; /* Adjusted margin */
+        margin-top: 16px; /* Adjusted margin */
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .text-box-terra {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .terra-text {
+        font-size: 0.7rem;
+    }
+
+    .terratitle {
+        font-size: 1.4rem;
+    }
+
+    .earthpicture {
+        width: 250.88px; /* 70% of the current width (358.4px) */
+        height: 250.88px; /* 70% of the current height (358.4px) */
+    }
+    
+    .earthpic {
+        width: 237.44px; /* 70% of the current width (339.2px) */
+        height: 234.9312px; /* 70% of the current height (335.616px) */
+        margin-left: 7.28px; /* Adjusted margin */
+        margin-top: 11.2px; /* Adjusted margin */
+    }
+
+    .marspicture {
+        width: 239.4px; /* 95% of the current width (252px) */
+        height: 239.4px; /* 95% of the current height (252px) */
+    }
+    
+    .marspic {
+        width: 226.23px; /* 95% of the current width (238.14px) */
+        height: 226.04px; /* 95% of the current height (238.77px) */
+        margin-left: 12.57px; /* 95% of the current margin-left (13.23px) */
+        margin-top: 4.19px; /* 95% of the current margin-top (4.41px) */
+    }
+
+    .venus {
+        gap: 10vh;
+    }
+
+   .venuspicture {
+        width: 272.08px; /* 95% of the current width (286.72px) */
+        height: 204.33px; /* 95% of the current height (215.04px) */
+}
+
+    .venuspic {
+        width: 202.46px; /* 95% of the current width (213.12px) */
+        height: 202.46px; /* 95% of the current height (213.12px) */
+        margin-left: 35.26px; /* 95% of the current margin-left (37.12px) */
+        margin-top: 3.65px; /* 95% of the current margin-top (3.84px) */
+}  
+
+    .mercurypicture {
+        width: 224px; /* 70% of the current width (320px) */
+        height: 233.6px; /* 70% of the current height (332.8px) */
+    }
+    
+    .mercurypic {
+        width: 238px; /* 70% of the current width (340px) */
+        height: 238px; /* 70% of the current height (340px) */
+    }
+
 }

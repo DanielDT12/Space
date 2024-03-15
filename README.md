@@ -71,8 +71,6 @@ er gjentagende på flere sider
 
 -Synce opp alt til github å debugge side
 
-
-
 ### Kilder
 
 (Har lagt til noen i html footer)
