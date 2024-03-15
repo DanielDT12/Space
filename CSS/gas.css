@@ -1,3 +1,4 @@
+/* CUSTOM PROPERTIES */
 :root {
     /* FONT SIZE */
     --fs-800: 3.5rem;
@@ -53,25 +54,12 @@
     border-bottom: 2px solid var(--clr-txt);
 
     > img {
-        max-width: 579px;
-        aspect-ratio: 1 / 1;
-        z-index: 1;
+        max-width: 100%;
     }
-}
-
-/* STOR " BAK TEKST */
-.gas-info::before {
-    content: '"';
-    position: absolute;
-    margin: -110px;
-    font-size: 300px;
-    color: rgb(0, 0, 0);
-    opacity: .4;
 }
 
 /* TEKST FELT MED NESTED SELECTOR */
 .gas-info {
-    position: relative;
     max-width: 40rem;
 
     > h2 {
@@ -87,14 +75,16 @@
     }
 }
 
-/* STOR " BAK TEKST */
-.gas-info::after {
-    content: '"';
-    position: absolute;
-    margin: -180px 630px;
-    font-size: 300px;
-    color: rgb(0, 0, 0);
-    opacity: .4;
+/* ANCHOR TAG I GAS-INFO TEKST */
+.wiki-link {
+    color: var(--clr-accent-pink);
+    text-decoration: none;
+}
+
+.wiki-link:hover, .wiki-link:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--clr-txt);
 }
 
 
@@ -107,4 +97,78 @@
 .bg-blue-white-txt {
     color: var(--clr-txt-light);
     background-color: var(--clr-heading);
+}
+
+.white-text-deco:hover, .white-text-deco:focus {
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--clr-txt-light);
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1280px) {
+    .gas-info {
+        margin-inline: 1.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 1130px) {
+    .gas-planets {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        text-align: center;
+
+        & h2 {
+            margin-top: 1.5rem;
+        }
+
+        & p {
+            margin-block: 1.5rem;
+        }
+    }
+
+    .gas-ice-img {
+        border-radius: var(--brdr-rad-normal);
+        box-shadow: 0 0 2rem black;
+        margin-bottom: 1.5rem;
+    }
+
+    .mq-jupiter {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mq-uranus {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .gas-info {
+        margin-inline: 1rem;
+        
+        > h2 {
+            font-family: var(--ff-special);
+            font-size: var(--fs-700);
+            margin-bottom: 1rem;
+        }
+    
+        > p {
+            font-weight: var(--fw-regular);
+            font-size: var(--fs-400);
+            line-height: 1.5;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 579px) {
+    .gas-ice-img {
+        border-radius: 0;
+        box-shadow: none;
+    }
 }
